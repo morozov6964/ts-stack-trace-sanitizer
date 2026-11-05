@@ -1,0 +1,17 @@
+{
+  "name": "ts-stack-trace-sanitizer",
+  "version": "0.1.0",
+  "description": "Extracts app source frames from Node.js or browser stack traces.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {}
+}
