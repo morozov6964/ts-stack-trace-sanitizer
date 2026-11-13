@@ -43,3 +43,10 @@ A frame with no recognisable path is dropped, because the library cannot prove
 it is application code. Non-frame lines (source extracts, `^` markers) are
 dropped too, since they only make sense next to the frames that were removed.
 The header line is preserved verbatim.
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
