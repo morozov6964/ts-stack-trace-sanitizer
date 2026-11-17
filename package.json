@@ -1,6 +1,6 @@
 {
   "name": "ts-stack-trace-sanitizer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Extracts app source frames from Node.js or browser stack traces.",
   "type": "module",
   "main": "src/index.js",
